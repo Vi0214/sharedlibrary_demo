@@ -8,5 +8,10 @@ pipeline {
                 gitrepo()
             }
         }
+        stage('Build') {
+            steps {
+                build()
+            }
+        }
     }
 }
