@@ -5,12 +5,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                gitrepo()
-            }
-        }
-        stage('Build') {
-            steps {
-                build()
+                gitrepository()
             }
         }
     }
