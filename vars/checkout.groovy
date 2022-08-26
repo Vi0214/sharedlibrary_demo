@@ -1,3 +1,3 @@
 def call(){
-  git branch: 'main', url: 'https://github.com/Vi0214/javawebapp.git'
+  checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Vi0214/javawebapp.git']]])
 }
