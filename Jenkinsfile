@@ -15,13 +15,8 @@ pipeline {
         }
         stage('Push to ECR') {
            steps {
-                pushimage()
+                ecrimage()
            }
-        }
-        stage('EKS deploymemt') {
-            steps {
-                Deploy()
-            }
         }
     }
 }
