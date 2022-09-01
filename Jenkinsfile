@@ -13,5 +13,15 @@ pipeline {
                 Buildcode()
             }
         }
+        stage('Push to ECR') {
+           steps {
+                pushimage()
+           }
+        }
+        stage('EKS deploymemt') {
+            steps {
+                Deploy()
+            }
+        }
     }
 }
