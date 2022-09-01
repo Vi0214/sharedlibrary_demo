@@ -18,5 +18,10 @@ pipeline {
                 ecrimage()
            }
         }
+        stage('EKS deploymemt') {
+            steps {
+                Deploy()
+            }
+        }
     }
 }
